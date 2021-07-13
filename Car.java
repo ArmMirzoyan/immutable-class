@@ -14,4 +14,16 @@ public final class Car {
     public Engine getEngine() {
         return engine;
     }
+
+    public int getProductionYear() {
+        return productionYear;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public String getMark() {
+        return mark;
+    }
 }
