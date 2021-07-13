@@ -1,6 +1,7 @@
 public final class Car {
-    private int productionYear;
-    private String model, mark;
+    private final int productionYear;
+    private final String model;
+    private final String mark;
     private final Engine engine;
 
     public Car(int productionYear, String model, String mark, Engine engine) {
