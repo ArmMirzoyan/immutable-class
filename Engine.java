@@ -1,10 +1,16 @@
 public class Engine {
-    private int horsePower, weight, mileage;
+    private int horsePower;
+    private int weight;
+    private int mileage;
 
     public Engine(int horsePower, int weight, int mileage) {
         this.horsePower = horsePower;
         this.weight = weight;
         this.mileage = mileage;
+    }
+
+    public Engine() {
+
     }
 
     public int getHorsePower() {
@@ -32,6 +38,10 @@ public class Engine {
     }
 
     protected Engine copyOfInstance() {
-        return new Engine(getHorsePower(), getWeight(), getMileage());
+        Engine e = new Engine();
+        e.horsePower = horsePower;
+        e.mileage = mileage;
+        e.weight = weight;
+        return e;
     }
 }
