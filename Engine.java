@@ -30,4 +30,8 @@ public class Engine {
     public void setMileage(int mileage) {
         this.mileage = mileage;
     }
+
+    protected Engine copyOfInstance() {
+        return new Engine(getHorsePower(), getWeight(), getMileage());
+    }
 }
